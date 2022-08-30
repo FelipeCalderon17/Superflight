@@ -162,30 +162,9 @@
                     <div class="col">
                         <div class="card shadow-sm">
                             <img class="img-fluid" src="./img/pasajero.jpg" alt="">
-
-                            <div class="card-body">
-                              
-                                <div >
-                                    <div class="btn-group">
-                                      <div class="input-group input-group-sm mb-3">
-                                        <form action="#">      
-                                          <input type="text" name="valor3" id="valor3">
-                                          <input type="submit" value="ingrese la cantidad de pasajeros"onclick="numeror();">
-                                        </form> 
-                                      </div>
-
-                                    </div>
-                                    <div class="btn-group">
-                                      <div class="input-group input-group-sm mb-3">
-                                        <form action="#">      
-                                          <input type="text" name="valor3" id="valor3">
-                                          <input type="submit" value="ingrese el peso de la maleta"onclick="numeror();">
-                                        </form> 
-                                      </div>
-                                      
-                                    </div>
-                                </div>
-                            </div>
+                            <label for="pasajeros">Ingrese la cantidad de pasajeros:<input type="text" name="pasajeros" id="pasajeros"></label>
+                            <label for="maletas">Ingrese el peso de las maletas:<input type="text" name="maletas" id="maletas"></label>
+                            <button type="submit" onclick="calcularPrecio()">Calcular el precio</button>
                         </div>
                     </div>
                     <div class="col">
@@ -205,25 +184,18 @@
                               <option value="9">barranquilla</option>
                             </select>
                             <hr>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" id="silla">
                               <option selected>elije el tipo de silla</option>
                               <option value="1">NORMAL</option>
                               <option value="2">EJECUTIVA</option>
-                              <option value="3">VIP</option>
+                              <option value="3">VIP (Incluye Whiskey)</option>
                             </select>
-                            <hr>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="vino">
-                              <label class="form-check-label" for="flexCheckDefault">
-                                ?quieres incluir whisky¿
-                              </label>
-                            </div>
-                           
                                 </div>
                             </div>
                         </div>
                     </div>
     </main>
+    <script src="./main.js"></script>
     <footer class="">
         <div class="container py-4 py-md-3 px-4 px-md-3">
           <div class="row">
