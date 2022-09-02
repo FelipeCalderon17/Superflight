@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" >
 
 <head>
     <meta charset="utf-8">
@@ -28,15 +28,19 @@
 
     <style>
         body {
-            background-color: black;
+            background-color: rgb(255, 255, 255);
         }
 
         main {
-            background-color: black;
+            background-color: rgb(255, 255, 255);
         }
 
         header {
-            background-color: black;
+            background-color: rgb(237, 2, 2);
+            text-decoration-color: aliceblue;
+        }
+        footer {
+            background-color: rgb(237, 2, 2);
         }
 
         .bd-placeholder-img {
@@ -55,7 +59,7 @@
 
         .b-example-divider {
             height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
+            background-color: rgba(255, 34, 34, 0.1);
             border: solid rgba(0, 0, 0, .15);
             border-width: 1px 0;
             box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
@@ -89,6 +93,8 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
         }
+    
+        
     </style>
 
 
@@ -97,81 +103,56 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <nav class="navbar navbar-expand-md  ">
             <div class="container-fluid">
 
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button type="button" class="btn btn-light">search</button>
-                </form>
+               
+               
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                       
-                      
+                        <img src="./img/logo2.jpg" alt="">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="principal.html">Home</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="principal.html">vuelos</a>
                       </li>
-                            
-                        
-                    </ul>
-                    <a class="navbar-brand" href="#"><img src="./joyeria/fondo.jpg" alt=""></a>
+                   
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button type="button" class="btn btn-light">search</button>
+            </form>
             </div>
         </nav>
+        
     </header>
 
     <main>
 
-        <section class="">
-            <div class="row py-lg-1 mt-5">
-
-
+        <section >
+            <div class="row ">
                <img src="./img/fondo.jpg" alt="">
-
 
             </div>
         </section>
 
-        <div class="album py-5 bg-light">
-            <div class="container-fluid">
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col-4">
-                        <div class="card shadow-sm">
-                            <img class="img-fluid" src="./img/ruleta.jpg" alt="">
+           
 
-                            <div class="card-body">
-                                <p class="card-text">prueba tu suerte</p>
-                                <div class="d-flex justify-content-between align-items-center">
-
-                                  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card shadow-sm">
-                            <img class="img-fluid" src="./img/pasajero.jpg" alt="">
-                            <label for="pasajeros">Ingrese la cantidad de pasajeros:<input type="text" name="pasajeros" id="pasajeros"></label>
-                            <label for="maletas">Ingrese el peso de las maletas:<input type="text" name="maletas" id="maletas"></label>
-                            <button type="submit" onclick="calcularPrecio()">Calcular el precio</button>
-                        </div>
-                        <div id="factura"></div>
-                    </div>
+                <div  class="row">
                     <div class="col-4">
                         <div class="card shadow-sm">
                             <img class="img-fluid" src="./img/viaje.png" alt="">
-<hr>
+                            <hr>
                             <select class="form-select" aria-label="Default select example" id="ciudad">
                               <option selected>elije el destino</option>
                               <option value="1">bogota</option>
@@ -185,28 +166,72 @@
                               <option value="9">barranquilla</option>
                             </select>
                             <hr>
+                            <hr>
                             <select class="form-select" aria-label="Default select example" id="silla">
                               <option selected>elije el tipo de silla</option>
                               <option value="1">NORMAL</option>
                               <option value="2">EJECUTIVA</option>
-                              <option value="3">VIP (Incluye Whiskey)</option>
+                              <option value="3">VIP (Incluye Whiskey) </option>
                             </select>
-                                </div>
-                            </div>
+                    
+                            
                         </div>
                     </div>
+                    <div class="col-4">
+                        <div class="card shadow-sm">
+                            <img class="img-fluid" src="./img/pasajero.jpg" alt="">
+                            <hr>
+                            <label for="pasajeros">Ingrese la cantidad de pasajeros <input type="text" name="pasajeros" id="pasajeros"></label>
+                            
+                            <label for="maletas" style="margin: 2%">Ingrese el peso de las maletas <input type="text" name="maletas" id="maletas"></label>
+                            <hr>
+                            <button type="submit" onclick="calcularPrecio()">Calcular el precio</button>
+                            
+                        </div>
+                        <div id="factura"></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card shadow-sm">
+                            <img class="img-fluid" src="./img/ruleta.jpg" alt="">
+                            
+                            <p  style="color: white"> prueba tu suerte
+                                iure amet explicabo commodi eum corporis maxime sit aliquid ab doloribus tempore omnis illo labore at inventore? Incidunt, aspernatur earum. em ipsum dolor sit amet consectetur adipisicing elit. Officiis nemo, iure amet explicabo commodi eum corporis maxime sit aliquid ab doloribus tempore omnis illo labore at inventore? Incidunt, aspernatur earum. 
+                            </p>
+                     
+                            
+                        </div>
+                    </div>
+                </div>
+                <hr>
     </main>
     <script src="./main.js"></script>
-    <footer class="">
-        <div class="container py-4 py-md-3 px-4 px-md-3">
-          <div class="row">
-            <div class="col-lg-3 mb-3">
-              <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
-                aria-label="Bootstrap">
-                <img src="./joyeria/fondo.jpg" alt="">
-
-              </a>    
-</footer>
+    
+        <footer class="container-fluid">
+            <div class="row">
+      <div class="col-4">
+        <img src="./img/logo2.jpg" alt="">
+      </div>
+      <div class="col-4">
+        <h5>Superflight</h5>
+        <ul class="list-unstyled">
+            <li class="mb-2">vuelos</li>
+            <li class="mb-2">ciudades</li>
+            <li class="mb-2">soporte</li>
+            <li class="mb-2">contactanos</li>
+      
+          </ul>
+      </div>
+      <div class="col-4">
+        <h5>Guides</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">registrate</li>
+          <li class="mb-2">¿quienes somos?</li>
+          <li class="mb-2">¿por que nosotros?</li>
+      
+      
+        </ul>
+      </div>
+    </footer>
 </body>
 
 </html>
