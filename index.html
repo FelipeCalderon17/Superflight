@@ -133,7 +133,7 @@
     <main>
 
         <section class="">
-            <div class="row py-lg-1">
+            <div class="row py-lg-1 mt-5">
 
 
                <img src="./img/fondo.jpg" alt="">
@@ -146,7 +146,7 @@
             <div class="container-fluid">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
+                    <div class="col-4">
                         <div class="card shadow-sm">
                             <img class="img-fluid" src="./img/ruleta.jpg" alt="">
 
@@ -159,15 +159,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-4">
                         <div class="card shadow-sm">
                             <img class="img-fluid" src="./img/pasajero.jpg" alt="">
                             <label for="pasajeros">Ingrese la cantidad de pasajeros:<input type="text" name="pasajeros" id="pasajeros"></label>
                             <label for="maletas">Ingrese el peso de las maletas:<input type="text" name="maletas" id="maletas"></label>
                             <button type="submit" onclick="calcularPrecio()">Calcular el precio</button>
                         </div>
+                        <div id="factura"></div>
                     </div>
-                    <div class="col">
+                    <div class="col-4">
                         <div class="card shadow-sm">
                             <img class="img-fluid" src="./img/viaje.png" alt="">
 <hr>
